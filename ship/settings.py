@@ -16,6 +16,6 @@ DOWNLOAD_DELAY = 0.75
 
 # ITEM_PIPELINES = {'scrapy.contrib.pipeline.images.ImagesPipeline': 1}
 ITEM_PIPELINES = {'ship.pipelines.ShipImagesPipeline': 1}
-IMAGES_STORE = 'val'
+IMAGES_STORE = 'train'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'ship (+http://www.yourdomain.com)'
