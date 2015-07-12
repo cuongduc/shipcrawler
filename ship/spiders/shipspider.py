@@ -29,7 +29,7 @@ class ShipSpider(scrapy.Spider):
 
 	def parse(self, response):
 		ships = response.xpath("//tr/td[@class='whiteboxstroke']")
-		file = open('val.txt', 'a')
+		file = open('train.txt', 'a')
 
 		for ship in ships:
 			item = ShipItem()
