@@ -5,8 +5,8 @@ from ship.items import ShipItem
 class ShipSpider(scrapy.Spider):
 	"""docstring for ShipSpider"""
 
-	LIMIT_START = 0
-	LIMIT_STOP	= 140160
+	LIMIT_START = 232704
+	LIMIT_STOP	= 272704
 	LIMIT_STEP 	= 192
 
 	def drange(start, stop, step):
@@ -15,7 +15,7 @@ class ShipSpider(scrapy.Spider):
 			yield r
 			r += step
 
-	name = "trainshipspider"
+	name = "valshipspider"
 
 	limit = ["%d" % x for x in drange(LIMIT_START,LIMIT_STOP,LIMIT_STEP)]
 
