@@ -12,7 +12,7 @@ BOT_NAME = 'ship'
 
 SPIDER_MODULES = ['ship.spiders']
 NEWSPIDER_MODULE = 'ship.spiders'
-DOWNLOAD_DELAY = 0.75
+# DOWNLOAD_DELAY = 0.75
 
 # ITEM_PIPELINES = {'scrapy.contrib.pipeline.images.ImagesPipeline': 1}
 ITEM_PIPELINES = {'ship.pipelines.ShipImagesPipeline': 1}
