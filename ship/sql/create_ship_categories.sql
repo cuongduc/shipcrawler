@@ -1,0 +1,4 @@
+﻿CREATE TABLE ship_categories (
+	id SERIAL PRIMARY KEY,
+	name CHARACTER VARYING(255) NOT NULL
+)
